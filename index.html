@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Case</title>
+  <title>Bookiepedia</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  ​<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <style>
-.container {
-         height: 500px;
-         background-image: url("https://s-media-cache-ak0.pinimg.com/originals/96/96/e5/9696e5e32384d69877621cd2a0218444.jpg");
-         background-attachment: fixed;
+      th{
+          text-align: center;
+         }
+      .container {
+          height: 500px;
+          background-image: url("https://s-media-cache-ak0.pinimg.com/originals/96/96/e5/9696e5e32384d69877621cd2a0218444.jpg");
+          background-attachment: fixed;
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -20,154 +26,327 @@
           color: white;
           font-size: 50px;
           text-align: center;
-}
-.section1 {
-         text-align: center;
-}
+         }
+      .overlay {
+          color: black;
+         }
+      .container : hover .overlay {
+          opacity: 1;
+        }
+      .section1 {
+          text-align: center;
+         }
+      .freebies {
+          text-align: center;
+         }
+      .opinion {
+          text-align: center;
+         }
+      #map {
+          height: 400px;
+          width: 100%;
+         }
+      li {
+         display: inline;
+         }
+   </style>
+  </head>
 
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 40%;
-      margin: auto;
-  }
-</style>
-</head>
-<body>
+  <body>
+     <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+           <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+       <a class="navbar-brand" href="#">Bookiepedia</a>
+          </div>
+         <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+               <li><a href="#aboutus" data-scroll="true" data-id="#aboutus">About Us</a></li>
+               <li><a href="#whatwedo" data-scroll="true" data-id="#whatwedo">What We Do</a></li>
+               <li><a href="#ourproducts" data-scroll="true" data-id="#ourproducts">Our Products</a></li>
+               <li><a href="#ff" data-scroll="true" data-id="#ff">Famous Freebies</a></li>
+               <li><a href="#testimonial" data-scroll="true" dat-id="#testimoial">Testimonials</a></li>
+               <li><a href="#team" data-scroll="true" data-id="#team">Team</a></li>
+               <li><a href="#number" data-scroll="true" data-id="#number">Numbers</a></li>
+             </ul>
+          <ul class="nav navbar-nav navbar-right">
+             <li><a href="https://www.facebook.com" target="_blank"><span class="inln"><img src="fb.png" width="30px" alt= "Facebook" class="img-circle item" class="overlay"></span></a></li>
+            <li><a href="https://twitter.com" target="_blank"><span class="inln"><img src="tw.png" width="30px" alt= "Twitter" class="img-circle item"></span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+         </ul>
+      </div>
+     </div>
+  </nav>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Bookiepedia</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">About Us</a></li>
-          <li><a href="#">What We Do</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Premium UI Tools<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Literature</a></li>
-            <li><a href="#">Scientific</a></li>
-            <li><a href="#">Fiction</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Famous Freebies<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Othelo</a></li>
-            <li><a href="#">Silent Spring</a></li>
-            <li><a href="#">Pride and Prejudice</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Team</a></li>
-          <li><a href="#">Numbers</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+     <div class="container">
+        <ul>
+            <li>"Good books don't give up all their secrets at once."</li>
        </ul>
     </div>
-  </div>
-</nav>
 
-<div class="container">
-   <ul>
-     <li>"Good books don't give up all their secrets at once."</li>
-   </ul>
+    <!-- About Us Section -->
+    <div class="section1" id="aboutus" >
+       <div class="jumbotron">
+        <h1>About us</h1>
+         <p>Bookiepedia is an Indian online bookstore with collection of over 1,30,00,000 books at extremely attractive prices from more than 34,12,622 authors.Besides a large collection of general books in various categories like Fiction, Non Fiction, Mystery, Self Help, Reference, Biographies etc, we also have a huge collection of Management, Computer, Engineering and Medical catering to many university syllabus in India.We offer our vast collection of books at very reasonable prices backed by prompt delivery and proactive customer support services.</p>
+      </div>
+    </div>
 
-</div>
-
-<div class="section1">
-  <div class="jumbotron">
-    <h2>About us</h2>
-    <p>Bookiepedia is an Indian online bookstore with collection of over 1,30,00,000 books at extremely attractive prices from more than
-       34,12,622 authors. </p>
-      <p>Besides a large collection of general books in various categories like Fiction, Non Fiction, Mystery,
-      Self Help, Reference, Biographies etc, we also have a huge collection of Management, Computer, Engineering and Medical books
-     catering to many university syllabus in India.</p>
-     <p>We offer our vast collection of books at very reasonable prices backed by prompt delivery & proactive customer support services.</p>
-   </div>
- </div>
-
-    <div class="jumbotron text-center">
+    <!-- What We do Section -->
+    <div class="jumbotron text-center" id="whatwedo">
     <h1>What We Do</h1>
-  </div>
-
-  <div class="section2">
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>Know You</h3>
-        <p>We are aware of your interests and latest trends..</p>
-        <p>According to this we pick the best of all and put in our collection just for you.</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Reasonable Cutshots</h3>
-        <p>Not all like to spend too much on books and hence reading.</p>
-        <p>But we know the importance of reading among the massess and hence introduce new discount offers every month to grasp
+    </div>
+      <div class="section2">
+        <div class="row">
+           <div class="col-sm-4">
+           <h3>Know You</h3>
+           <p>We are aware of your interests and latest trends..</p>
+           <p>According to this we pick the best of all and put in our collection just for you.</p>
+          </div>
+          <div class="col-sm-4">
+          <h3>Reasonable Cutshots</h3>
+          <p>Not all like to spend too much on books and hence reading.</p>
+          <p>But we know the importance of reading among the massess and hence introduce new discount offers every month to grasp
            your  interesrt.</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Easy Delievery</h3>
-        <p>We ensure easy placing of orders and on time delievery.</p>
-        <p>Payment is as per your convenience,no issues and also the book can be returned if not the right one.</p>
-      </div>
-    </div>
-  </div>
-
-<!-- Freebies Section -->
-<div id="band" class=" text-center">
-  <h1>Famous Freebies</h1>
-  <br>
-    <div class="images">
-  <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="http://i.imgur.com/mhk3QTx.jpg" alt="Chania" width="50px" height="50px">
-      </div>
-
-      <div class="item">
-        <img src="http://i.imgur.com/zeLor5u.jpg" alt="Chania" width="70px" height="70px">
-      </div>
-
-      <div class="item">
-        <img src="http://i.imgur.com/c93w7nz.jpg" alt="Flower" width="70px" height="70px">
-      </div>
-
-      <div class="item">
-        <img src="http://i.imgur.com/MIG1PCX.jpg " alt="Flower" width="50px" height="50px">
-      </div>
+          </div>
+         <div class="col-sm-4">
+         <h3>Easy Delievery</h3>
+         <p>We ensure easy placing of orders and on time delievery.</p>
+         <p>Payment is as per your convenience,no issues and also the book can be returned if not the right one.</p>
+        </div>
+     </div>
     </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+    <!-- Freebies Section -->
+    <div class="freebies" id="ff">
+    <h1>Famous Freebies</h1>
+    <p>The following books are free for first time users to get an idea about our services.</p>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th >Name of Book</th>
+            <th>Name of Author</th>
+          </tr>
+        </thead>
+          <tbody>
+             <tr>
+                <td>Animal Farm</td>
+                <td>George Orewell</td>
+            </tr>
+            <tr>
+                <td>The Giving Tree</td>
+                <td>Shel Silverstein</td>
+            </tr>
+            <tr>
+                <td>Cosmos</td>
+               <td>Carl Sagan</td>
+            </tr>
+         </tbody>
+      </table>
+    </div>
+
+    <!-- Products Section -->
+    <div id="ourproducts" class=" text-center">
+    <h1>Our Products</h1>
+    <br>
+    <p>We offer a wide range of books of every intrest so that all our customers are grateful.</p>
+      <div class="row jobs">
+        <div class="col-sm-4 project.add-animation animation-3 animate">
+        <img src="http://i.imgur.com/5CvDOSg.jpg" width="400px" height="400px" class="item">
+        <div class="caption">
+         <p>Brilliant Blunders</p>
+        </div>
+        </div>
+        <div class="col-sm-4 project.add-animation animation-3 animate">
+        <img src="http://i.imgur.com/zeLor5u.jpg" width="400px" height="400px" class="item">
+        <div class="caption">
+         <p>Tom Sawyer</p>
+        </div>
+      </div>
+        <div class="col-sm-4 project.add-animation animation-3 animate">
+        <img src="http://i.imgur.com/xLaXUN7.jpg" width="400px" height="400px" class="item">
+        <div class="caption">
+         <p>Harry Potter</p>
+        </div>
+        </div>
+     </div>
+    <div class="row jobs">
+        <div class="col-sm-4 project.add-animation animation-3 animate">
+        <img src="http://i.imgur.com/IOBIbhE.jpg" width="350px" height="350px" class="item">
+        <div class="caption">
+         <p>The Hobbit</p>
+        </div>
+        </div>
+        <div class="col-sm-4 project.add-animation animation-3 animate">
+        <img src="http://i.imgur.com/CDuQrMm.jpg" width="350px" height="350px" class="item">
+        <div class="caption">
+         <p>Five on a Treasure Island</p>
+        </div>
+    </div>
+        <div class="col-sm-4 project.add-animation animation-3 animate">
+        <img src="http://i.imgur.com/TMx5Ev5.jpg" width="350px" height="350px" class="item">
+        <div class="caption">
+         <p>Dickens</p>
+        </div>
+        </div>
+     </div>
+    </div>
+
+    <div class="opinion" id="testimonial">
+    <h1>What People Think</h1>
+       <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Sundar Pichai</a></li>
+          <li><a data-toggle="tab" href="#menu1">Ravindar Singh</a></li>
+          <li><a data-toggle="tab" href="#menu2">Aman</a></li>
+       </ul>
+
+       <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+          <h3>CEO, Google</h3>
+          <p>Mr. Sundai reccomends Bookiepedia for easy access to the world of books.</p>
+          </div>
+          <div id="menu1" class="tab-pane fade">
+          <h3>Indian Novel Writer</h3>
+          <p>Mr. Ravinder uses Bookiepedia first to showcase his new arrival.</p>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+          <h3>Student, IIT Rurkee</h3>
+          <p>Aman is a regular user of Bookiepedia and is gratifiedwith its services.</p>
+          </div>
+      </div>
+    </div>
+
+    <!-- Meet Our team Section -->
+    <!-- Member 1 -->
+    <div class="jumbotron text-center" id="team">
+    <h2>Meet Our Team</h2>
+    <br>
+      <div class="row jobs">
+        <div class="col-sm-3 "  style="background-color:lavenderblush;"> <img src="http://i.imgur.com/nsRefjB.jpg" width="200px" height="200px" class="img-circle item">
+        <div class="caption">
+        <h2>Apoorva Agarwal</h2>
+        <p><small>Technical Support</small></p>
+      <hr>
+      <ul>
+        <li><a href="https://www.facebook.com" target="_blank"><span class="inln"><img src="fb.png" width="50px" alt= "Facebook" class="img-circle item"></span></a></li>
+        <li><a href="https://twitter.com" target="_blank"><span class="inln"><img src="tw.png" width="50px" alt= "Twitter" class="img-circle item">s</span></a>
+      </ul>
+      <hr>
+        </div>
+        </div>
+    <!-- Member 2 -->
+        <div class="col-sm-3 jobs "><img src="http://i.imgur.com/tl88lTQ.jpg" width="200px" height="200px" class="img-circle item">
+        <div class="caption ">
+        <h2>Keshav Agarwal</h2>
+        <p><small>Technical Head</small></p>
+      <hr>
+      <ul>
+        <li><a href="https://www.facebook.com" target="_blank"><span class="inln"><img src="fb.png" width="50px" alt= "Facebook" class="img-circle item"></span></a></li>
+        <li><a href="https://twitter.com" target="_blank"><span class="inln"><img src="tw.png" width="50px" alt= "Twitter" class="img-circle item"></span></a>
+      </ul>
+      <hr>
+       </div>
+       </div>
+    <!-- Member 3 -->
+       <div class="col-sm-3 "  style="background-color:lavenderblush;"><img src="Anindyo.jpg" width="200px" height="200px" class="img-circle item">
+       <div class="caption">
+       <h2>Anindyo Bose</h2>
+       <p><small>Executive Officer</small></p>
+      <hr>
+      <ul>
+        <li><a href="https://www.facebook.com" target="_blank"><span class="inln"><img src="fb.png" width="50px" alt= "Facebook" class="img-circle item"></span></a></li>
+        <li><a href="https://twitter.com" target="_blank"><span class="inln"><img src="tw.png" width="50px" alt= "Twitter" class="img-circle item"></span></a>
+      </ul>
+      <hr>
+      </div>
+      </div>
+    <!-- Member 4 -->
+      <div class="col-sm-3 "><img src="abc.jpg" width="200px" height="200px" class="img-circle item">
+      <div class="caption">
+      <h2>Gurpreet Singh</h2>
+      <p><small>Quality Assurance</small></p>
+      <hr>
+      <ul>
+        <li><a href="https://www.facebook.com" target="_blank"><span class="inln"><img src="fb.png" width="50px" alt= "Facebook" class="img-circle item"></span></a></li>
+        <li><a href="https://twitter.com" target="_blank"><span class="inln"><img src="tw.png" width="50px" alt= "Twitter"  class="img-circle item"></span></a>
+      </ul>
+      <hr>
+       </div>
+       </div>
+      </div>
+    </div>
+
+    <hr>
+    <!-- No Dont Lie Section -->
+    <div class="jumbotron text-center" id="number">
+    <h2 >Numbers Don't Lie</h2>
+    <h4>"Started from the bottom now we're here" </h4>
+    <div class="row">
+    <div class="col-sm-4" ><h3>Services</h3> We Provide Service To Our Customer Across All The Distrcits Of The State & Also Extended To Some Districts Of The Neghbouring States. </div>
+    <div class="col-sm-4" ><h3>Franchise</h3> Our Organization Has Authorized Dealership of 20+ Leading Manufacturing Companies Accross The World For Professional Musical Instuments.  </div>
+    <div class="col-sm-4" ><h3>Branches </h3> We Serve from 10+ Outlets Across The State And Also Extended To The Neghbouring States To Provide Quick And Quality Service.</div>
+    </div>
+   </div>
+
+  <hr>
+  <!-- Where To Meet Starts -->
+<div  class="jumbotron text-center" id="contact">
+  <div class="contact-container">
+      <div class="address-container add-animation animation-1">
+        <div class="address">
+          <h2>Where to meet ?</h2>
+          <p class="text-gray">
+          “N-81, Barakhamba Road, <br>
+          Block N,Cannaught Place, <br>
+          New Delhi, Delhi 110001”
+          </p>
+          <h4>Want to say hello?</h4>
+          <a target="_blank" href="#"  class="btn btn-black btn-contact">
+          CONTACT US <i class="fa fa-paper-plane"></i>
+          </a>
+          <h4>Thank you for Visiting Our Site!</h4>
+        </div>
+      </div>
+     <div class="jumbotron text-center">
+     <h2>Maps</h2>
+     <br>
+     <div class="big-map" id="map"></div>
+     <script>
+        function initMap() {
+        var uluru = {lat: 28.631158, lng: 77.222042};
+        var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: uluru
+        });
+        var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+        });
+        }
+     </script>
+     <script async defer
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4WaSayVgWvf3ICROXdvtL4_LmQ_i9B04&callback=initMap">
+     </script>
+    </div>
+    </div>
   </div>
 </div>
 
-
-
-
-</body>
+<div class="col-sm-3 "></div>
+  <div class="col-sm-6 ">
+  <footer>
+  <ul>
+    <li><a href="https://www.facebook.com" target="_blank"><span class="inln"><img src="fb.png" width="50px" alt= "Facebook" class="img-circle item"></span></a></li>
+    <li><a href="https://twitter.com" target="_blank"><span class="inln"><img src="tw.png" width="50px" alt= "Twitter" class="img-circle item"></span></a></li>
+    <li ><a href="#" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+    <li><a href="#" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-phone"></span> Contact</a></li>
+  </ul>
+  </footer>
+  </div>
+ </body>
 </html>
